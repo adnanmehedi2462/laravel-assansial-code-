@@ -1,0 +1,24 @@
+   $this->adminauthcheck();  
+
+///////
+
+public function adminauthcheck(){
+        
+        $admin_id=session::get('admin_id');
+            if($admin_id){
+                
+              return;  
+                
+            }else{
+               return Redirect::to('/backend')->send() ;
+                
+                
+                
+                
+            }
+        
+        
+        
+        
+        
+    }
